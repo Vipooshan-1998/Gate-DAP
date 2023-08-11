@@ -1,0 +1,21 @@
+# training parameters
+lr: 0.000001
+batch_size: 2
+workers: 1
+epochs: 100
+weight_decay: 0.0001
+MAE_pretrained: 'MAE_pretrained/mae_pretrain_vit_base.pth'
+# resume: ''
+start_epoch: 0
+
+# convGRU parameters
+input_dim: 1024
+hidden_dim: 1024
+num_layers: 1
+
+# Decoder parameters
+in_channels: 1024
+out_channels: 1
+features: [512, 256, 128, 64, 32]
+
+input_t: 4
