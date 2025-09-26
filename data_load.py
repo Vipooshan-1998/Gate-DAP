@@ -24,6 +24,7 @@ class LoadData(Dataset):
         seg = []
         flow = []
         area = []
+        print("---------||-------------||----------------||--------")
         print(batch_t[:4])
         for rgb_path in batch_t[:4]:
             Img = cv2.imread(rgb_path, cv2.IMREAD_COLOR)
