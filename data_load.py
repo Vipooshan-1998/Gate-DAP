@@ -11,7 +11,7 @@ from torchvision import transforms as T
 
 class LoadData(Dataset):
     def __init__(self, model='train', image_size=224):
-        self.root = "datasets\"
+        self.root = "datasets/"
         self.size = (image_size, image_size)
         self.transforms = T.Compose([T.ToTensor()])
         # if model == 'training':
