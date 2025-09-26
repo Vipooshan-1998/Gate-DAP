@@ -24,6 +24,7 @@ class LoadData(Dataset):
         seg = []
         flow = []
         area = []
+        print(batch_t[:4])
         for rgb_path in batch_t[:4]:
             Img = cv2.imread(rgb_path, cv2.IMREAD_COLOR)
             Img = (cv2.resize(Img, self.size)/255).astype('float32')
